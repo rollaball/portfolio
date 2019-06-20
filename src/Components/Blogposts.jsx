@@ -17,7 +17,7 @@ const Blog = styled.div`
 `;
 export default () => {
     return (
-        <BlogpostContainer>
+        <BlogpostContainer id="blogposts">
 
         
         <h1 style={{margin: '8% 10%', width: '50%', position: 'absolute'}}>Blogposts</h1>

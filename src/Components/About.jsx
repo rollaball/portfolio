@@ -11,7 +11,7 @@ const CenterText = styled.div`
 `;
 export default () => {
     return (
-        <AboutContainer>
+        <AboutContainer id="about">
             <CenterText>
                 <h1>
                     Saurabh Shetty

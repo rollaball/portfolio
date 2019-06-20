@@ -13,6 +13,7 @@ display:flex;
 flex-direction: column;
 justify-content: space-around;
 transition: 0.2s;
+z-index:100;
 a{
     display:block;
     // background:#724aed;
@@ -52,10 +53,10 @@ export default class HeaderComp extends React.Component {
     render() {
         return (
             <Header rotRad={this.state.rotRad}>
-                <a style={{ transform: 'translateX(0em) translateY(1em) rotateZ(40deg)' }} href="/#">About Me</a>
+                <a style={{ transform: 'translateX(0em) translateY(1em) rotateZ(40deg)' }} href="#about">About Me</a>
                 <a style={{ transform: 'translateX(-3em) rotateZ(12deg)' }} href="#projects">Projects</a>
-                <a style={{ transform: 'translateX(-3em) rotateZ(-15deg)' }} href="/#">Blogposts</a>
-                <a style={{ transform: 'translateX(0em) translateY(-1em) rotateZ(-44deg)' }} href="#about">Contact Me</a>
+                <a style={{ transform: 'translateX(-3em) rotateZ(-15deg)' }} href="#blogposts">Blogposts</a>
+                <a style={{ transform: 'translateX(0em) translateY(-1em) rotateZ(-44deg)' }} href="#contact">Contact Me</a>
             </Header>
         )
     }

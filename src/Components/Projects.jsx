@@ -13,7 +13,7 @@ const Projects = styled.div`
     justify-content: space-around;
 `;
 const Project = styled.div`
-     background-color: blue;
+     background-color: #c67cf9;
 `;
 export default () => {
     return (
