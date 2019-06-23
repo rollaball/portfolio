@@ -42,7 +42,7 @@ export default class HeaderComp extends React.Component {
             this.setState({ color: '#a529fc' })
         }
         // console.log(window.scrollY *);
-        this.state = this.setState({ ...this.state, rotRad: -6.98 + ((window.scrollY / 400)) / 5 }, () => { console.log(this.state, window.scrollY); })
+        this.state = this.setState({ ...this.state, rotRad: -6.98 + window.scrollY / ((window.innerHeight/980)* 2030)}, () => { console.log(this.state, window.scrollY); })
 
     }
 
