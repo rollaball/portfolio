@@ -6,7 +6,7 @@ position:fixed;
 height: 25em;
 width: 25em;
 border-radius: 50%;
-background-color: #c67cf9;
+border: solid 5px #c67cf9;
 right: -16%;
 top: 22%;
 display:flex;
@@ -17,7 +17,7 @@ z-index:100;
 a{
     display:block;
     // background:#724aed;
-    background:linear-gradient(90deg, rgba(114,74,237,1) 47%, rgba(198,124,249,1) 77%);
+    background:rgba(114,74,237,1);
     margin-right: 30px;
     width: 7em;
     padding: 10px;
