@@ -13,7 +13,7 @@ const Blogs = styled.div`
     justify-content: space-around;
 `;
 const Blog = styled.div`
-     background-color: blue;
+     background-color: grey;
 `;
 export default () => {
     return (

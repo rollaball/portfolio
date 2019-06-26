@@ -6,7 +6,7 @@ position:fixed;
 height: 25em;
 width: 25em;
 border-radius: 50%;
-background-color: #c67cf9;
+background-color: black;
 right: -16%;
 top: 22%;
 display:flex;
@@ -14,14 +14,15 @@ flex-direction: column;
 justify-content: space-around;
 transition: 0.2s;
 z-index:100;
+border:white 5px solid
 a{
     display:block;
     // background:#724aed;
-    background:linear-gradient(90deg, rgba(114,74,237,1) 47%, rgba(198,124,249,1) 77%);
+    background:white;
     margin-right: 30px;
     width: 7em;
     padding: 10px;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 `;
@@ -32,17 +33,17 @@ export default class HeaderComp extends React.Component {
         this.state = {};
     }
     listenScrollEvent = e => {
-        if (window.scrollY < 400) {
-            this.setState({ color: '#82c1eb' })
-        } else if (window.scrollY < 1000) {
-            this.setState({ color: '#04ddaf' })
-        } else if (window.scrollY < 1600) {
-            this.setState({ color: '#82c1eb' })
-        } else {
-            this.setState({ color: '#a529fc' })
-        }
+        // if (window.scrollY < 400) {
+        //     this.setState({ color: '#82c1eb' })
+        // } else if (window.scrollY < 1000) {
+        //     this.setState({ color: '#04ddaf' })
+        // } else if (window.scrollY < 1600) {
+        //     this.setState({ color: '#82c1eb' })
+        // } else {
+        //     this.setState({ color: '#a529fc' })
+        // }
         // console.log(window.scrollY *);
-        this.state = this.setState({ ...this.state, rotRad: -6.98 + window.scrollY / ((window.innerHeight/980)* 2030)}, () => { console.log(this.state, window.scrollY); })
+        this.setState({ ...this.state, rotRad: -6.98 + window.scrollY / ((window.innerHeight/980)* 2030)}, () => { console.log(this.state, window.scrollY); })
 
     }
 
