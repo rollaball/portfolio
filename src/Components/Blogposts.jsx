@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll'
 import styled from 'styled-components';
 const BlogpostContainer = styled.div`
   height: 100vh;
@@ -78,6 +79,8 @@ export default props => {
   const blog3 = blogs ? (blogs[2] ? blogs[2] : defaultBlog) : defaultBlog;
   console.log(blog1, blog2, blog3)
   return (
+
+    <ScrollAnimation animateOnce offset={400} animateIn="fadeIn">
     <BlogpostContainer id="blogposts">
       <h1 style={{ margin: '8% 10%', width: '50%', position: 'absolute', color: 'yellow' }}>
         Blogposts
@@ -142,6 +145,6 @@ export default props => {
           </a>
         </Blog>
       </Blogs>
-    </BlogpostContainer>
+    </BlogpostContainer></ScrollAnimation>
   );
 };

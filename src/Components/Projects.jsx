@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll';
 import indigene from '../Images/indigene.png';
 import moodpod from '../Images/moodpod.png';
 const ProjectContainer = styled.div`
@@ -70,7 +71,8 @@ const Project = styled.div`
 `;
 const ToolTip = styled.div``;
 export default () => {
-  return (
+  return (<ScrollAnimation offset={400} animateOnce animateIn="fadeIn">
+      
     <ProjectContainer id="projects">
       <h1 style={{ margin: '8% 10%', width: '50%', position: 'absolute', color: 'yellow' }}>
         Projects
@@ -128,6 +130,6 @@ export default () => {
           </a>
         </Project>
       </Projects>
-    </ProjectContainer>
+    </ProjectContainer></ScrollAnimation>
   );
 };
