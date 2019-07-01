@@ -13,7 +13,7 @@ export default () => {
     return (
         <AboutContainer id="about">
             <CenterText>
-                <h1>
+                <h1 style={{color: 'yellow'}}>
                     Saurabh Shetty
                 </h1>
                     <p>

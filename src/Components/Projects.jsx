@@ -21,7 +21,7 @@ const Project = styled.div`
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(4, 221, 175, 0.8);
+    background-color: rgba(170, 170, 0, 0.9);
     opacity: 0;
     transition: opacity 0.6s;
     display: flex;
@@ -31,9 +31,16 @@ const Project = styled.div`
     text-decoration: none;
 
     .tooltip {
+      h2{
+        color: #333333;
+      }
+      div{
+        color: #333333;
+      }
+      border: solid 4px #333333;
       visibility: hidden;
       width: 15em;
-      background-color: #a529fc;
+      background-color: yellow;
       color: #fff;
       text-align: center;
       padding: 5px 10px;
@@ -65,7 +72,7 @@ const ToolTip = styled.div``;
 export default () => {
   return (
     <ProjectContainer id="projects">
-      <h1 style={{ margin: '8% 10%', width: '50%', position: 'absolute' }}>
+      <h1 style={{ margin: '8% 10%', width: '50%', position: 'absolute', color: 'yellow' }}>
         Projects
       </h1>
       <Projects>

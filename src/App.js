@@ -16,22 +16,22 @@ const AppContainer = styled.div`
 
 export default class App extends React.Component {
   state = {
-    color: '#82c1eb'
+    color: '#333333'
   };
 
-  listenScrollEvent = e => {
-    if (window.scrollY < 400) {
-      this.setState({ color: '#82c1eb' });
-    } else if (window.scrollY < 1000) {
-      this.setState({ color: '#04ddaf' });
-    } else if (window.scrollY < 1600) {
-      this.setState({ color: '#82c1eb' });
-    } else if (window.scrollY < 2200) {
-      this.setState({ color: '#a529fc' });
-    } else {
-      this.setState({ color: '#82c1eb' });
-    }
-  };
+  // listenScrollEvent = e => {
+  //   if (window.scrollY < 400) {
+  //     this.setState({ color: '#82c1eb' });
+  //   } else if (window.scrollY < 1000) {
+  //     this.setState({ color: '#04ddaf' });
+  //   } else if (window.scrollY < 1600) {
+  //     this.setState({ color: '#82c1eb' });
+  //   } else if (window.scrollY < 2200) {
+  //     this.setState({ color: '#a529fc' });
+  //   } else {
+  //     this.setState({ color: '#82c1eb' });
+  //   }
+  // };
 
   componentDidMount() {
     window.addEventListener('scroll', this.listenScrollEvent);
