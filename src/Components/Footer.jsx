@@ -29,23 +29,33 @@ const ContentContainer = styled.div`
             
         }
     }
-}span{
-  display: flex;
-  height: 5em;
-  width: 10% 
-  align-items:center;
-  justify-content: space-around;
-  svg{
-      height: 2em;
-      width: 2em
-      fill:yellow;
-      cursor: pointer;
-      :hover {
-          fill:#cccc00;
-          
-      }
   }
-}
+  span{
+    display: flex;
+    height: 5em;
+    width: 10% 
+    align-items:center;
+    justify-content: space-around;
+    svg{
+        height: 2em;
+        width: 2em
+        fill:yellow;
+        cursor: pointer;
+        :hover {
+            fill:#cccc00;
+            
+        }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+  div{
+    width: 65%;
+  }
+  span{
+    width: 35%;
+  }
+  }
 `;
 export default () => {
   return (
@@ -54,12 +64,6 @@ export default () => {
         <ContentContainer>
           <h1 style={{ color: 'yellow' }}>Get in touch</h1>
           <div>
-            {/* <a>
-            <object type="image/svg+xml" data={github}>
-              Your browser does not support SVG
-            </object>
-          </a> */}
-            {/*  */}
             <a href="http://linkedin.com" target="_blank">
               <Linkedin />
             </a>
