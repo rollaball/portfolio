@@ -6,7 +6,8 @@ const Project = styled.div`
   width: 8em;
   border-radius: 0.3em;
   // background-color: #555555;
-  border: 1px solid white;
+  color: #dbafa4;
+  border: 1px solid #dbafa4;
   display: flex;
   flex-direction: column;
   align-items: center;

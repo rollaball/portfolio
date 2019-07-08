@@ -23,6 +23,7 @@ const Content = styled.div`
   left: 10%;
   h1 {
     font-size: 6vw;
+    color: #dbafa4;
   }
   @media only screen and (max-width: 900px) {
     width: 80%;

@@ -11,16 +11,18 @@ const BlogpostContainer = styled.div`
 `;
 const Content = styled.div`
   position: absolute;
-  top: 20%;
+  top: 2%;
   left: 10%;
   h1 {
     font-size: 6vw;
+    color: #edd5d9;
   }
   @media only screen and (max-width: 900px) {
     h1 {
       font-size: 10vw;
     }
     left: 4%;
+    top: 20%;
     font-size:2vh;
   }
 `;

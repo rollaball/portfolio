@@ -13,7 +13,7 @@ const Header = styled.div`
   flex-direction: column;
   justify-content: space-around;
   transition: 0.2s;
-  z-index: 0;
+  z-index: 1;
   a {
     display: block;
     margin-right: 30px;
@@ -28,7 +28,10 @@ const Header = styled.div`
     text-decoration: none;
   }
   @media only screen and (max-width: 900px) {
-    display: none;
+    // display: none;
+    right: -300px;
+    opacity: 0.1;
+    z-index: 0;
   }
 `;
 

@@ -9,7 +9,6 @@ const App = () => {
         <Route path="/" exact component={IndexPage} />
         <Route path="/Project" component={ProjectPage} />
       </Router>
-      <IndexPage />
     </div>
   );
 };
