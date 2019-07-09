@@ -59,6 +59,19 @@ const ModalProject = styled.div`
     width: 40%;
     font-size: 1.3em;
   }
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    .projectImage {
+      width: 80%;
+     
+    }
+    .projectDesc {
+      width: 80%;
+      font-size: 1em;
+    }   
+  }
 `;
 
 const projects = [
