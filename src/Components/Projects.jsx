@@ -44,6 +44,10 @@ const ModalContent = styled.div`
   h1 {
     font-size: 3em;
     margin-left: 1em;
+    @media only screen and (max-width: 900px) {
+      margin-left: 0em;
+      text-align: center;
+    }
   }
 `;
 const ModalProject = styled.div`
@@ -65,12 +69,11 @@ const ModalProject = styled.div`
     height: 50vh;
     .projectImage {
       width: 80%;
-     
     }
     .projectDesc {
       width: 80%;
       font-size: 1em;
-    }   
+    }
   }
 `;
 
@@ -154,13 +157,29 @@ class ProjectsComponent extends React.Component {
           className="Modal"
           overlayClassName="Overlay"
         >
+          <button
+            onClick={this.handleCloseModal}
+            style={{
+              color: "#33333",
+              backgroundColor: 'rgba(0,0,0,0)',
+              position: 'absolute',
+              fontSize: '1.5em',
+              top: '0.2em',
+              right: '0.2em',
+              border: '0px'
+            }}
+          >
+            x
+          </button>
           <ModalContent>
             <h1>{projects[0].title}</h1>
             <ModalProject>
               <div className="projectImage">Screenshot</div>
               <div className="projectDesc">
                 <div>{projects[0].desc}</div>
-                <a style={{ fontSize: '0.7em', textDecoration: 'underline' }}>Go to project</a>
+                <a style={{ fontSize: '0.7em', textDecoration: 'underline' }}>
+                  Go to project
+                </a>
               </div>
             </ModalProject>
           </ModalContent>
